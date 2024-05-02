@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Filter Page</title>
+    <style>
+        /* Add your CSS styles here */
+        /* This is just a basic example, you can style it according to your design */
+    
+.filter-section {
+            float: left;
+            width: 20%;
+            padding: 20px;
+        }
+        .products-section {
+            float: left;
+            width: 80%;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+        /* Custom range input styles */
+        input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 15px;
+            background: transparent;
+            outline: none;
+            padding: 0;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: #888;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: purple;
+            cursor: pointer;
+            border: 2px solid #fff;
+            margin-top: -9px;
+        }
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: #888;
+        }
+        input[type=range]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: purple;
+            cursor: pointer;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="filter-section">
+        <h2>Filter By:</h2>
+        <h3>Category</h3>
+        <input type="checkbox" id="category1" name="category" value="Category 1">
+        <label for="category1">Category 1</label><br>
+        <input type="checkbox" id="category2" name="category" value="Category 2">
+        <label for="category2">Category 2</label><br>
+        <!-- Add more filter options here -->
+
+        <h3>Color</h3>
+        <input type="checkbox" id="colorBlack" name="color" value="Black">
+        <label for="colorBlack">Black</label><br>
+        <input type="checkbox" id="colorRed" name="color" value="Red">
+        <label for="colorRed">Red</label><br>
+        <input type="checkbox" id="colorBlue" name="color" value="Blue">
+        <label for="colorBlue">Blue</label><br>
+        <!-- Add more color options here -->
+
+        <h3>RAM</h3>
+        <input type="checkbox" id="ram4GB" name="ram" value="4GB">
+        <label for="ram4GB">4GB</label><br>
+        <input type="checkbox" id="ram8GB" name="ram" value="8GB">
+        <label for="ram8GB">8GB</label><br>
+        <input type="checkbox" id="ram16GB" name="ram" value="16GB">
+        <label for="ram16GB">16GB</label><br>
+        <!-- Add more RAM options here -->
+
+        <h3>Price Range</h3>
+        <input type="range" id="priceRange" name="priceRange" min="0" max="100" value="100">
+        <p>Price: <span id="priceValue">100</span></p>
+        <!-- Add more filter options here -->
+    </div>
+
+    <div class="products-section" id="productsSection">
+        <h2>Filtered Products</h2>
+        <!-- Product cards will be displayed here -->
+        <div class="product-card" id="product1">Product 1 - Price: $25, Color: Red, RAM: 4GB, Category: Category 1</div>
+        <div class="product-card" id="product2">Product 2 - Price: $50, Color: Blue, RAM: 8GB, Category: Category 2</div>
+        <div class="product-card" id="product3">Product 3 - Price: $75, Color: Green, RAM: 16GB, Category: Category 1</div>
+        <div class="product-card" id="product4">Product 4 - Price: $100, Color: Red, RAM: 4GB, Category: Category 2</div>
+        <!-- Add more product cards here -->
+    </div>
+
+    <script>
+        // Sample product data (replace with your actual product data)
+        const products = [
+            { name: 'Product 1', price: 25, color: 'Red', ram: '4GB', category: 'Category 1' },
+            { name: 'Product 2', price: 50, color: 'Blue', ram: '8GB', category: 'Category 2' },
+            { name: 'Product 3', price: 75, color: 'Green', ram: '16GB', category: 'Category 1' },
+            { name: 'Product 4', price: 100, color: 'Red', ram: '4GB', category: 'Category 2' },
+            // Add more products as needed
+        ];
+
+        let filteredProducts = [...products]; // Initially, all products are displayed
+        let prevSelectedFilters = {};
+
+        function filterProducts() {
+    const selectedColors = Array.from(document.querySelectorAll('input[name=color]:checked')).map(cb => cb.value);
+    const selectedRAM = Array.from(document.querySelectorAll('input[name=ram]:checked')).map(cb => cb.value);
+    const selectedCategories = Array.from(document.querySelectorAll('input[name=category]:checked')).map(cb => cb.value);
+    const minPrice = parseInt(document.getElementById('priceRange').min);
+    const maxPrice = parseInt(document.getElementById('priceRange').max);
+    const priceRange = parseInt(document.getElementById('priceRange').value);
+
+    let filtered = products.filter(product => {
+        return (!selectedColors.length || selectedColors.includes(product.color)) &&
+               (!selectedRAM.length || selectedRAM.includes(product.ram)) &&
+               (!selectedCategories.length || selectedCategories.includes(product.category)) &&
+               product.price >= minPrice && product.price <= priceRange;
+    });
+
+    filteredProducts = filtered.length ? filtered : [...products]; // if no filters applied, show all products
+}
+
+
+        function displayProducts(filteredProducts) {
+            const productsSection = document.getElementById('productsSection');
+            productsSection.innerHTML = ''; // Clear previous products
+
+            filteredProducts.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.classList.add('product-card');
+                productElement.textContent = `${product.name} - Price: $${product.price}, Color: ${product.color}, RAM: ${product.ram}, Category: ${product.category}`;
+                productsSection.appendChild(productElement);
+            });
+        }
+
+        // Initial display of products
+        displayProducts(products);
+
+        // Add event listeners for color checkboxes
+        document.querySelectorAll('input[name=color]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                filterProducts();
+                displayProducts(filteredProducts);
+            });
+        });
+
+        // Add event listeners for RAM checkboxes
+        document.querySelectorAll('input[name=ram]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                filterProducts();
+                displayProducts(filteredProducts);
+            });
+        });
+
+        // Add event listeners for category checkboxes
+        document.querySelectorAll('input[name=category]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                filterProducts();
+                displayProducts(filteredProducts);
+            });
+        });
+
+        // Add event listener for price range input
+        document.getElementById('priceRange').addEventListener('input', () => {
+            const priceRange = parseInt(document.getElementById('priceRange').value);
+            document.getElementById('priceValue').textContent = priceRange;
+            filterProducts();
+            displayProducts(filteredProducts);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

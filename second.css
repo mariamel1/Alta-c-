@@ -1,0 +1,1011 @@
+.header1{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1px 90px;
+    margin: 0px;
+
+}
+body{
+    line-height: 1.2;
+}
+.header1 a{
+    font-size: 14px;
+    font-family: my_font;
+    color: white;
+    text-decoration: underline;
+}
+.header1 ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.header1 ul{
+    display: flex;
+}
+.section1{
+    width: 100%;
+    background-color: #333;
+}
+.header1 .padd li{
+    margin-top: 20px;
+}
+header{
+    width: 100%;
+    height: 59px;
+    padding: 0px 60px 0px 0px;
+    border-top:1px solid rgba(128, 128, 128, 0.796) ;
+    border-bottom:1px solid rgba(128, 128, 128, 0.796) ;
+    margin-top: 5px;
+
+}
+nav{
+    display: flex;
+}
+.bg-light{
+    background-color: transparent !important;
+}
+header ul li{
+    list-style: none;
+    border-left: 1px solid #a5a5a5;
+    border-right: 1px solid #a5a5a5;
+    padding: 3px 35px 8px 16px;
+    height: 58px;
+    text-align:left;
+    vertical-align: middle;
+}
+header ul li a{
+    font-size: 15px;
+    font-family: my_font_5;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    color: #a5a5a5;
+}
+header ul li a:hover{
+    color: black;
+    font-size: 15px;
+    font-family: my_font_5;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    width: 100%;
+}
+header img{
+    width: 250px;
+}
+header .img{
+   width: 25%;
+   padding-left: 119px;
+   border-left:1px solid white ;
+}
+a{
+    text-decoration: none;
+}
+.section2{
+    width: 100%;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.796);
+    padding: 7px 0px 5px 121px;
+}
+.search{
+    display: flex;
+}
+.form{
+    display: flex;
+    height: 40px;
+    margin-right:80px;
+}
+.form .get{
+    padding: 8px 163px 11px 10px;
+    font-size: medium;
+    border: 1px solid  rgba(128, 128, 128, 0.796);
+}
+.form .button{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 26px;
+    font-size:small;
+    color:  rgba(11, 10, 10, 0.796);
+    border: 1px solid  rgba(128, 128, 128, 0.796);
+    background-color: white;
+}
+.search p{
+    font-size: smaller;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.785);
+    padding-top: 15px;
+    margin-right: 29px;
+}
+.search p i{
+    color: black;
+}
+.button3{
+    height: auto;
+}
+.basket{
+    padding: 13px 25px 13px 25px;
+    border-radius:3px;  
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 5px;
+    font-size:small;
+    margin-right: 12px;
+}
+.scales{
+    background-color: white;
+    border-radius:3px;
+    border: 1px solid rgba(128, 128, 128, 0.796);
+    padding: 11px 10px;
+    margin-right: 12px;
+    color: #333;
+}
+.scales:hover{
+    color: purple;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.796);
+    padding: 11px 10px;
+    margin-right: 12px;
+}
+.heart{
+    padding: 11px 12px 11px 12px;
+    border-radius:3px;
+    border: 1px solid rgba(128, 128, 128, 0.796);
+    background-color: white;
+    margin-right: 12px;
+}
+.heart:hover{
+    color: purple;
+    background-color: white;
+    border-radius:3px;
+    border: 1px solid rgba(128, 128, 128, 0.796);
+    padding: 8px 250px 11px 10px;
+    margin-right: 12px;
+}
+.signup{
+    border: 1px solid white;
+    background-color: white;
+    font-size: small;
+    font-weight: 800;
+}
+.signup:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: purple;
+}
+.carousel-container {
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousels {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-img{
+    min-width: 100%;
+}
+.carousel-img img{
+    height: 380px; 
+    width: 100%;
+    overflow: hidden;
+}
+.points {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.point {
+    width: 12px;
+    height: 12px;
+    background-color: #a4a0a0c6;
+    margin: 0 5px;
+    border-radius: 100%;
+    
+}
+.point.active {
+  background-color: #888;
+}
+.carousel-container2 {
+    position: relative;
+    width: 89%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousels2 {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-img2{
+    min-width: 100%;
+}
+.carousel-img2 img{
+    height: 200px; 
+    width: 100%;
+    overflow: hidden;
+}
+.points2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.point2 {
+    width: 12px;
+    height: 12px;
+    background-color: #d8d5d5c6;
+    margin: 0 5px;
+    border-radius: 100%;
+    
+}
+.point2.active {
+  background-color: #b4b2b2;
+}
+
+
+.section3 h6 a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+    font-family: my_font;
+}
+.section3 h6{
+    font-size: 16px;
+    font-family: my_font;
+    padding: 0px 0px;
+    margin: 0px 118px;
+}
+.main{
+    display: flex;
+    padding: 50px 67px 20px 60px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px 118px;
+    width: 100%;
+    
+}
+.section3{
+    background-color: #f8f8f8;;
+    width: 100%;
+    padding: 20px 0px;
+}
+.left{
+    border: 1px solid #d0d0d0;
+    width: 100%;
+}
+.left h5{
+    border-radius: 3px 3px 0 0;
+    background-color: #fafafa;
+    padding: 9px 13px 10px;
+    font-family: my_font_5;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0px;
+    font-weight: bold;
+}
+.left a{
+    font-family: Roboto;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    color: #323232;
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    justify-content: space-between;
+}
+.left a:hover{
+    font-family: Roboto;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    color: #ba4dd2;
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    justify-content: space-between;
+}
+.left a span{
+    float: right;
+}
+.right{
+    width: 99%;
+}
+
+.main2{
+    width: 100%;
+    padding-left: 13px;
+    display: flex;
+}
+.right h1{
+    padding-left: 19px;
+    padding-bottom: 10px;
+    font-size: 31px;
+    font-family: my_font_5;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: -.85px;
+}
+.left2{
+    padding: 0px;
+}
+.toge {
+    display: flex;
+}
+.left2 div{
+    border: 1px solid rgba(222, 222, 222, 0.796) ;
+    padding: 22px 10px 8.8px 10px;
+}
+.left2 img{
+    width: 95%;
+}
+.right2 div{
+    border: 1px solid rgba(222, 222, 222, 0.796) ;
+    padding-bottom: 2.5px;
+}
+.right2 img{
+    width: 95%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 14px 10px;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+}
+.flex3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.title{
+    font-family: my_font_5;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: -.85px;
+    font-size: 16px;
+    font-synthesis: none;
+    margin-right: 5px;
+    color: #000;
+    text-decoration: none;
+}
+.title:hover{
+    font-family: my_font_5;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: -.85px;
+    font-size: 16px;
+    font-synthesis: none;
+    margin-right: 5px;
+    color: #d169eb;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.right2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+/* .right2 .cols12{
+    height: 340px;
+} */
+
+
+
+
+.section5{
+    background-color: #cac7c730;
+    width: 100%;
+    padding: 20px 35px;
+}
+.last1{
+    width: 100%;
+    display: flex;
+    padding: 50px 67px 20px 60px;
+}
+.last1 a{
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1rem;
+}
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+/* .flex1 div nav {
+    display: flex;
+    flex-direction: column; 
+    padding: 0px;
+
+} */
+.button3{
+    height: auto;
+}
+.section6{
+    background-color: #cac7c730;
+    border-top: 1px solid rgb(144, 144, 144);
+    padding: 11px 110px;
+    width: 100%;
+
+}
+.section6 .row .cool{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.fa-xl{
+    font-size: 2em;
+}
+
+@media screen and (Max-width:768px){
+    
+
+
+
+    .section3 h6{
+        margin: 0px 32px;
+    }
+    .section3 {
+        padding: 10px 0px;
+    }
+    .main {
+        margin: 10px 32px;
+        flex-direction:  column;
+        padding: 0px;
+        padding-right: 0px;
+        width: 86%;
+    }
+    .right h1{
+        font-size: 22px;
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .left2 img{
+        width: 60%;
+        justify-content: center;
+    }
+    .left2 div{
+        justify-content: center;
+        text-align: center;
+
+    }
+    .right2 div{
+        justify-content: center;
+        text-align: center;
+    }
+    .right2 img{
+        width: 53%;
+    }
+    .flex3 img{
+        width: 100%;
+    }
+    .toge{
+        display: flex;
+        flex-direction: column;
+    }
+    .toge img{
+        width: 52%;
+    }
+
+
+
+
+}
+
+@media screen and (Max-width:768px){
+    .header1{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0px;
+
+    }
+    .navbar{
+        padding-right: 10px;
+        padding: 0px;
+        flex-direction: row;
+        display: flex;
+    }
+    .header1 ul{
+        padding:0px 20px;
+        padding-right: 0px;
+        
+    }
+    .not{
+        flex-direction: column;
+        text-align: center;
+    }
+    .padd{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    header{
+        padding: 0px -4px;
+        padding-right: 36px;
+    }
+    header .img{
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    header img{
+        width: 200px;
+    }
+    .header1 ul li{
+        margin-right: 36px;
+        margin-top: 10px;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-fluid{
+        padding-right: 7px;
+    }
+    .section2 p{
+        display: none;
+    }
+    .section2{
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    .form .get{
+        width: 100%;
+        padding: 8px 0px 11.5px 10px
+     }
+    .form {
+         margin-right: 0px;
+         height: 40.5px;
+         width: 100%;
+         
+    }
+    form{
+        width: 100%;
+    }
+    .form .button{
+        padding: 0px;
+        width: 11%;
+    }
+    .signup span{
+        display: none;
+    }
+    .row{
+        width: 100%;
+    }
+    .signup{
+        font-size: larger;
+    }
+    .basket {
+        margin-right: 144px;
+    }
+    .button3{
+        margin: 7px 0px;
+    }
+    .collapse{
+        background-color: rgb(192, 189, 189);
+        z-index: 2;
+    }
+    .ok{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .flex1 div nav{
+        flex-direction: row;
+    }
+
+
+
+
+
+
+    .carousel-img img{
+        height: 150px;
+        width: 95%;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        background-color: transparent;
+    }
+    .product{
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: white;
+    }
+    .product .pr-image img{
+        width: 100px;
+        height: 68px;
+        top: 8px;
+        right: 5px;
+
+    }
+    .online{
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .sale {
+        padding: 8px 0px 8px 45px;
+        width: 80%;
+        font-size: 17px;
+    }
+    .button2 button{
+        padding: 11.5px 10px;
+    }
+    .button2{
+        width: 10%;
+    }
+    .white {
+        height: 44px;
+    }
+    .card{
+        width: 100%;
+        overflow: visible;
+    }
+    .advice {
+        padding: 0px;
+    }
+    .card2{
+        width: 100%;
+        overflow: visible;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tv{
+        flex-direction: column;
+        width: 100%;
+        padding: 7px 3px;
+    }
+    .for-two{
+        flex-direction: column;
+        width: 100%;
+    }
+    .for-two .col-md-6{
+        border-bottom: 1px solid rgb(192, 192, 192);
+        display: flex;
+    }
+    .up{
+        flex-direction: column;
+    }
+    .down{
+        flex-direction: column;
+    }
+    
+    .down img{
+        width: 100%;
+        height: 300px;
+    }
+    .card3{
+        width: 100%;
+        overflow: visible;
+    }
+    .lastsamurai{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    .carousel-container2{
+        width: 100%;
+    }
+    .carousel-img2 img{
+        height: auto;
+        width: 94.5%;
+    }
+    .last1 {
+        padding: 0px;
+        flex-direction: column;
+    }
+    .flex1{
+        flex-direction: column;
+    }
+    .section6{
+        padding: 10px;
+    }
+    .section6 .row .cool{
+        padding:0px 31px;
+        flex-direction: column;
+    }
+    .mm{
+        justify-content: space-around;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .up img{
+        width: 100%;
+    }
+    
+}
+@media screen and  (min-width: 1194px) and (Max-width:1480px) {
+    header ul li{
+        padding: 0px 23px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 204px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 93px;
+    }
+    .section2{
+        padding: 5px 0px 5px 93.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8px 138px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+    }
+    .heart {
+        margin:  0px;
+    }
+
+
+
+    .img1{
+        width: 130px;
+    }
+    .img2{
+        width: 120px;
+    }
+    .img3{
+        width: 107px;
+    }
+    .img4{
+        width: 104px;
+    }
+}
+@media screen  and (min-width: 1109px) and (Max-width:1193px) {
+    header ul li{
+        padding: 0px 23px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 185px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 93px;
+    }
+    .section2{
+        padding: 5px 0px 5px 88.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8px 122px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+        font-size: small;
+    }
+    .heart {
+        margin:  0px;
+    }
+    .basket {
+        padding: 13px 19px 13px 19px;
+        margin-right: 4px;
+    }
+    .scales{
+        margin-right: 7px;
+    }
+
+}
+@media screen  and (min-width: 978px) and (Max-width:1108px)  {
+    header ul li{
+        padding: 0px 0px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 165px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 79px;
+    }
+    .section2{
+        padding: 5px 0px 5px 78.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8.5px 85px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .heart {
+        margin:  0px;
+    }
+    .basket {
+        padding: 13px 10px 13px 10px;
+        margin-right: 4px;
+    }
+    .scales{
+        margin-right: 7px;
+    }
+    .header1{
+        padding: 1px 28px;
+    }
+}
+@media screen  and (min-width: 915px) and (Max-width:977px)  {
+    header ul li{
+        padding: 0px 0px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 165px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 79px;
+    }
+    .section2{
+        padding: 5px 0px 5px 73.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8.5px 33px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .heart {
+        margin:  0px;
+    }
+    .basket {
+        padding: 13px 10px 13px 10px;
+        margin-right: 4px;
+    }
+    .scales{
+        margin-right: 7px;
+    }
+    .header1{
+        padding: 1px 28px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen  and (min-width: 815px) and (Max-width:914px)  {
+    header ul li{
+        padding: 0px 0px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 165px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 79px;
+    }
+    .section2{
+        padding: 5px 0px 5px 68.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8.5px 33px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .heart {
+        margin:  0px;
+    }
+    .basket {
+        padding: 13px 10px 13px 10px;
+        margin-right: 4px;
+    }
+    .scales{
+        margin-right: 7px;
+    }
+    .header1{
+        padding: 1px 28px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen  and (min-width: 713px) and (Max-width:814px)  {
+    header ul li{
+        padding: 0px 0px 1px 5px;
+    }
+    header ul li a{
+        font-size: 13px;
+    }
+    header img{
+        width: 165px;
+        /* padding-left: 104px; */
+    }
+    header .img{
+        padding-left: 79px;
+    }
+    .section2{
+        padding: 5px 0px 5px 73.6px;
+    }
+    .form{
+        margin-right: 7px;
+    }
+    .form .get{
+        padding: 8.5px 33px 11px 10px;
+    }
+    .search p {
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .heart {
+        margin:  0px;
+    }
+    .basket {
+        padding: 13px 10px 13px 10px;
+        margin-right: 4px;
+    }
+    .scales{
+        margin-right: 7px;
+    }
+    .header1{
+        padding: 1px 28px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+}
